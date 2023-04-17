@@ -1,0 +1,15 @@
+.container-form {
+    @extend .contenedor;
+    box-shadow: 4px 8px 7px 1px rgba(0,0,0,0.15);
+}
+
+@mixin flex ($direction, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin grid () {
+    display: grid;
+    gap: 2rem;
+}

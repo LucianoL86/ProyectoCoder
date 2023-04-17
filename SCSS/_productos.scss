@@ -1,0 +1,94 @@
+//Categorías
+.categoria {
+    margin-bottom: 2rem;
+}
+
+//Sobre Nosotros
+.nosotros-grid {
+    display: grid;
+
+    .imagen-nosotros2 {
+        display: none;
+    }
+
+    .texto-nosotros {
+        color: $fontColor;
+        background-color: $nosotrosColor;
+    
+        .sub-nosotros {
+            padding-top: 2rem;
+        }
+    
+        p {
+            padding: 2rem;
+            margin-bottom: 0;
+            font-size: $textMd;
+            text-align: justify;
+    
+            span {
+                font-weight: $textBold;
+            }
+        }
+    }
+}
+
+//Productos destacados
+.listado-productos {
+    @include grid();
+}
+
+//Pantalla Cocina-Comedor
+.flex-cocina {
+    @include flex(column, 2rem);
+}
+
+.grid-sillas {
+    @include grid();
+}
+
+.titulo {
+    font-size: 2.2rem;
+}
+
+.grid-mesas {
+    @include grid();
+}
+
+//Pantalla Living
+.hero-living {
+    background-image: url(../img/living2.webp);
+    width: $width;
+    height: 35rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 57%;
+}
+
+.container-living {
+    @include flex(column, 2rem);
+}
+
+.grid-ofertas {
+    @include grid();
+}
+
+//Pantalla dormitorio
+.flex-dormitorio {
+    @include flex(column, 2rem);
+
+    .comodas {
+        margin-bottom: 0;
+    }
+}
+
+.grid-camas {
+    @include grid();
+}
+
+.grid-mesas-luz {
+    @include grid();
+}
+
+.flex-comodas {
+    @include flex(column, 2rem);
+}

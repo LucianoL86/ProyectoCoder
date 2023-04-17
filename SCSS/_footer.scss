@@ -1,0 +1,60 @@
+//Footer
+.footer {
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    background-color: $footerColor;
+
+    svg {
+        fill: $nosotrosColor;
+        width: 4rem;
+        padding-bottom: 1rem;
+    }
+
+    h3 {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes {
+    a {
+        padding: 1rem;
+    }
+}
+
+.contact-flex {
+    display: flex;
+
+    svg {
+        margin-left: 5rem;
+    }
+
+    a {
+        display: block;
+        text-align: center;
+
+        p {
+            margin-left: 1rem;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.soporte {
+    a {
+        display: block;
+        text-align: center;
+    }
+}
+
+.copy {
+    padding-top: 2rem;
+    text-align: center;
+}

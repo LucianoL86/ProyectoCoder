@@ -1,0 +1,588 @@
+@media (min-width: 450px) {
+
+    /* FOOTER */
+    .footer {
+        font-size: $textSm;
+
+        .contact-flex {
+            a {
+                p {
+                    font-size: $textSm;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media (min-width: 576px) {
+
+    /* GLOBALES */
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.7rem;
+    }
+
+    h3 {
+        font-size: 2.2rem;
+    }
+
+    /* NAV */
+    .navbar {
+        img {
+            width: 19.5rem;
+            height: 3.7rem;
+        }
+    }
+
+    .hero {
+        background-image: url(../img/principal2.webp);
+        height: 30rem;
+    }
+
+    /* PRODUCTOS DESTACADOS */
+    .listado-productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* COCINA-COMEDOR */
+    .titulo {
+        font-size: 2.5rem;
+    }
+
+    .flex-cocina {
+        flex-direction: row;
+    }
+
+    .grid-sillas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-mesas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* DORMITORIO */
+    .grid-camas {
+        grid-template-columns: repeat(2, 1fr);
+
+        .camas:nth-child(3) {
+            grid-column: 1/3;
+        }
+    }
+}
+
+@media (min-width: 691px) {
+    /* DORMITORIO */
+    .grid-mesas-luz {
+        grid-template-columns: repeat(2, 1fr);
+
+        .mesas-luz:nth-child(3) {
+            grid-column: 1/3;
+
+            .flotado {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                .caracteristicas {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 2rem;
+                }
+            }
+        }
+
+        .mesas-luz:nth-child(5) {
+            grid-column: 1/3;
+            grid-row: 4/5;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* GLOBALES */
+    .button-a:hover {
+        background-color: $greyColor;
+        color: $fontColor;
+        border-bottom-right-radius: 1rem;
+    }
+
+    /* HEADER Y NAV */
+    header img {
+        display: block;
+        margin: 5rem auto;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .contenedor-navegacion {
+        border-top: 1px solid $borderColor;
+        background-color: $fontColor;
+        position: sticky;
+        top: 0;
+        left: 0;
+
+        .nav-principal {
+            padding: 2rem;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    a {
+                        padding: 2rem;
+                        font-size: $textLg;
+
+                        &:hover {
+                            background-color: $greyColor;
+                            color: $fontColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hero {
+        height: 60rem;
+    }
+
+    /* CATEGORIAS */
+    .listado-categorias {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+        border: $borderColor;
+
+        .categoria {
+            width: 32%;
+        }
+    }
+
+    /* PRODUCTOS DESTACADOS */
+    .listado-productos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* PAGINA COCINA-COMEDOR */
+    .grid-sillas {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "silla1 silla2 silla3"
+            "silla4 silla5 silla6";
+
+        .silla1 {
+            grid-area: silla1;
+        }
+
+        .silla2 {
+            grid-area: silla2;
+        }
+
+        .silla3 {
+            grid-area: silla3;
+        }
+
+        .silla4 {
+            grid-area: silla4;
+
+        }
+
+        .silla5 {
+            grid-area: silla5;
+        }
+
+        .silla6 {
+            grid-area: silla6;
+        }
+    }
+
+
+
+    /* PAGINA LIVING */
+    .hero-living {
+        background-image: url(../img/living.webp);
+        height: 65rem;
+    }
+
+    .container-living {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "design1 design1 design2 design2"
+            "design3 design3 design3 design3"
+            "design4 design4 design5 design5"
+            "design6 design6 design6 design6"
+            "design9 design9 design7 design7"
+            "design8 design8 design8 design8";
+        gap: 2rem;
+
+        .design:nth-child(1) {
+            grid-area: design1;
+        }
+
+        .design:nth-child(2) {
+            grid-area: design2;
+        }
+
+        .design:nth-child(3) {
+            grid-area: design3;
+        }
+
+        .design:nth-child(4) {
+            grid-area: design4;
+        }
+
+        .design:nth-child(5) {
+            grid-area: design5;
+        }
+
+        .design:nth-child(6) {
+            grid-area: design6;
+        }
+
+        .design:nth-child(7) {
+            grid-area: design7;
+        }
+
+        .design:nth-child(8) {
+            grid-area: design8;
+        }
+
+        .design:nth-child(9) {
+            grid-area: design9;
+        }
+    }
+
+    .grid-ofertas {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            "oferta1 oferta1 oferta1 oferta1 oferta1 oferta1"
+            "oferta2 oferta2 oferta2 oferta3 oferta3 oferta3"
+            "oferta4 oferta4 oferta5 oferta5 oferta6 oferta6";
+        gap: 2rem;
+
+        .oferta:nth-child(1) {
+            grid-area: oferta1;
+        }
+
+        .oferta:nth-child(2) {
+            grid-area: oferta2;
+        }
+
+        .oferta:nth-child(3) {
+            grid-area: oferta3;
+        }
+
+        .oferta:nth-child(4) {
+            grid-area: oferta4;
+        }
+
+        .oferta:nth-child(5) {
+            grid-area: oferta5;
+        }
+
+        .oferta:nth-child(6) {
+            grid-area: oferta6;
+        }
+    }
+
+    /* PAGINA DORMITORIO */
+    .flex-dormitorio {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+
+        .dormitorio {
+            width: 31%;
+            margin: 1rem 0;
+
+            a {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .grid-camas {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
+
+        .camas:nth-child(1) {
+            grid-column: 1/4;
+        }
+
+        .camas:nth-child(2) {
+            grid-column: 4/7;
+        }
+
+        .camas:nth-child(3) {
+            grid-column: 1/3;
+        }
+
+        .camas:nth-child(4) {
+            grid-column: 3/5;
+        }
+
+        .camas:nth-child(5) {
+            grid-column: 5/7;
+        }
+    }
+
+    /* CONTACTO */
+    .img-texto {
+        width: 60rem;
+    }
+}
+
+@media (min-width: 800px) {
+
+    /* FOOTER */
+    .footer {
+        font-size: $textMd;
+
+        .footer-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: start;
+
+            svg {
+                width: 3rem;
+            }
+
+            .contact-flex {
+                a {
+                    p {
+                        text-align: left;
+                        font-size: $textMd;
+                    }
+                }
+            }
+
+            .soporte {
+                a {
+                    text-align: left
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 830px) {
+
+    /* PAGINA DORMITORIO */
+    .grid-mesas-luz {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+
+        .mesas-luz:nth-child(3) {
+            grid-column: 3/4;
+
+            .flotado {
+                display: grid;
+                grid-template-columns: 1fr;
+
+                .caracteristicas {
+                    padding-top: 0;
+                }
+            }
+        }
+
+        .mesas-luz:nth-child(5) {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+    }
+
+    .flex-comodas {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+        gap: 1rem;
+
+        a {
+            width: 32%;
+            margin: 1rem 0;
+
+            img {
+                width: $width;
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+
+    /* PAGINA COCINA COMEDOR */
+    .titulo {
+        font-size: 3rem;
+    }
+
+    .grid-mesas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* GLOBALES */
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    /* PAGINA LIVING */
+    .container-living {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            "design1 design1 design2 design2 design3 design3"
+            "design4 design4 design5 design5 design6 design6"
+            "design7 design7 design7 design9 design9 design9"
+            "design8 design8 design8 design8 design8 design8";
+        gap: 2rem;
+
+        .design:nth-child(8) {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (min-width: 1100px) {
+
+    /* LIVING */
+    .grid-ofertas {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            "oferta1 oferta1 oferta1 oferta1 oferta1 oferta1"
+            "oferta2 oferta2 oferta2 oferta3 oferta3 oferta3"
+            "oferta4 oferta4 oferta5 oferta5 oferta6 oferta6";
+        gap: 2rem;
+
+        .oferta:nth-child(1) {
+            grid-area: oferta1;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+        }
+
+        .oferta:nth-child(2) {
+            grid-area: oferta2;
+        }
+
+        .oferta:nth-child(3) {
+            grid-area: oferta3;
+        }
+
+        .oferta:nth-child(4) {
+            grid-area: oferta4;
+        }
+
+        .oferta:nth-child(5) {
+            grid-area: oferta5;
+        }
+
+        .oferta:nth-child(6) {
+            grid-area: oferta6;
+        }
+    }
+
+    /* CONTACTO */
+    .contacto-flex {
+        display: flex;
+
+        img {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 1155px) {
+
+    /* SOBRE NOSOTROS */
+    .nosotros-grid {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 1rem;
+
+        .imagen-nosotros {
+            height: 100%;
+        }
+
+        .imagen-nosotros2 {
+            display: block;
+        }
+
+        .texto-nosotros {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+
+            h3 {
+                font-size: 2.5rem;
+                padding-top: 2rem;
+            }
+
+            p {
+                font-size: $textLg;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* NAV */
+    .nav-principal {
+        a {
+            padding: 1.5rem;
+            font-size: 2rem;
+        }
+    }
+
+    .texto-nosotros {
+
+        h3 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: $textMd;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+
+    /* SOBRE NOSOTROS */
+    .texto-nosotros {
+        h3 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+    }
+}

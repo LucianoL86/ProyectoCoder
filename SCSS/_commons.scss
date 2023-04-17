@@ -1,0 +1,86 @@
+//Globales
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $mainColor;
+    font-family: $mainFont;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h1, h2, h3 {
+    font-family: $headingFont;
+    font-weight: $textBold;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.7rem;
+    padding-top: $paddingTop;
+    padding-bottom: $paddingBottom;
+}
+
+h2 {
+    font-size: 2.4rem;
+    padding-top: $paddingTop;
+    padding-bottom: $paddingBottom;
+}
+
+h3 {
+    font-size: 2.0rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    font-size: $textLg;
+    margin-bottom: 0;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    height: auto;
+}
+
+img {
+    max-width: $width;
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.descripcion {
+    padding: 2rem;
+    color: $fontColor;
+}
+
+.producto {
+    background-color: $greyColor;
+    border: 1px solid $borderColor;
+    p {
+        font-size: $textLg;
+        margin-bottom: 0;
+    }
+}
+
+.button-a {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    &:focus {
+        background-color: $greyColor;
+        color: $fontColor;
+        border-bottom-right-radius: 1rem;
+    }
+}
+

@@ -1,0 +1,32 @@
+//Header y Nav
+header img {
+    display: none
+}
+
+.contenedor-navegacion {
+    nav {
+        ul {
+            display: none;
+        }
+    }
+}
+
+.navbar-brand {
+    img {
+        width: 17rem;
+        height: 2.1;
+    }
+
+}
+.nav-link {
+    text-align: right;
+}
+
+.hero {
+    background-image: url(../img/principal.webp);
+    width: $width;
+    height: 25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 80%;
+}

@@ -1,0 +1,97 @@
+//Pantalla contacto
+.img-texto {
+    width: $width;
+    height: auto;
+    border-bottom: 1px solid $borderColor;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+
+    img {
+        width: $width;
+    }
+
+    .texto-contacto {
+        padding: 2rem;
+    }
+
+    .mensajes-flex {
+        display: flex;
+        padding-left: 2rem;
+        
+        svg {
+            width: 2.5rem;
+        }
+
+        p {
+            margin-left: 1rem;
+        }
+    }
+}
+
+.contacto-flex {
+    display: flex;
+
+    img {
+        display: none;
+    }
+
+    .formulario {
+        width: 60rem;
+        margin: 2rem auto;
+
+        fieldset {
+            border: 1px solid $fieldsetColor;
+
+            legend {
+                background-color: $formColor;
+                color: $fontColor;
+                width: $width;
+                text-align: center;
+                font-size: $textLg;
+                font-weight: $textBold;
+                letter-spacing: 1px;
+                padding: 1rem;
+                margin-bottom: 4rem;
+            }
+        }
+
+        .campo {
+            display: flex;
+            margin-bottom: 2rem;
+
+            label {
+                flex-basis: 10rem;
+                margin-left: 2rem;
+            }
+
+            input,
+            textarea {
+                width: $width;
+                margin-right: 2rem;
+                border: 1px solid $borderColor;
+                outline: none;
+                padding: 1rem;
+                font-size: $textSm;
+            }
+        }
+
+        .btn {
+            background-color: $formColor;
+            color: $borderColor;
+            font-weight: $textBold;
+            margin-top: 1rem;
+            padding: 1rem;
+            font-size: $textSm;
+            text-align: center;
+            border: none;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $footerColor;
+                color: black;
+            }
+        }
+        
+    }
+}

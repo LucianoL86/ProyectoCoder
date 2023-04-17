@@ -1,0 +1,776 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@400;700;900&display=swap");
+.container-form {
+  box-shadow: 4px 8px 7px 1px rgba(0, 0, 0, 0.15);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(238, 238, 238);
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.7rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+.contenedor, .container-form {
+  max-width: 120rem;
+  margin: 0 auto;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.descripcion {
+  padding: 2rem;
+  color: white;
+}
+
+.producto {
+  background-color: rgb(111, 121, 131);
+  border: 1px solid rgb(225, 225, 225);
+}
+.producto p {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+.button-a {
+  display: block;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+}
+.button-a:focus {
+  background-color: rgb(111, 121, 131);
+  color: white;
+  border-bottom-right-radius: 1rem;
+}
+
+header img {
+  display: none;
+}
+
+.contenedor-navegacion nav ul {
+  display: none;
+}
+
+.navbar-brand img {
+  width: 17rem;
+  height: 2.1;
+}
+
+.nav-link {
+  text-align: right;
+}
+
+.hero {
+  background-image: url(../img/principal.webp);
+  width: 100%;
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 80%;
+}
+
+.categoria {
+  margin-bottom: 2rem;
+}
+
+.nosotros-grid {
+  display: grid;
+}
+.nosotros-grid .imagen-nosotros2 {
+  display: none;
+}
+.nosotros-grid .texto-nosotros {
+  color: white;
+  background-color: rgb(90, 99, 112);
+}
+.nosotros-grid .texto-nosotros .sub-nosotros {
+  padding-top: 2rem;
+}
+.nosotros-grid .texto-nosotros p {
+  padding: 2rem;
+  margin-bottom: 0;
+  font-size: 1.7rem;
+  text-align: justify;
+}
+.nosotros-grid .texto-nosotros p span {
+  font-weight: 900;
+}
+
+.listado-productos {
+  display: grid;
+  gap: 2rem;
+}
+
+.flex-cocina {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.grid-sillas {
+  display: grid;
+  gap: 2rem;
+}
+
+.titulo {
+  font-size: 2.2rem;
+}
+
+.grid-mesas {
+  display: grid;
+  gap: 2rem;
+}
+
+.hero-living {
+  background-image: url(../img/living2.webp);
+  width: 100%;
+  height: 35rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 57%;
+}
+
+.container-living {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.grid-ofertas {
+  display: grid;
+  gap: 2rem;
+}
+
+.flex-dormitorio {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.flex-dormitorio .comodas {
+  margin-bottom: 0;
+}
+
+.grid-camas {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-mesas-luz {
+  display: grid;
+  gap: 2rem;
+}
+
+.flex-comodas {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.img-texto {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid rgb(225, 225, 225);
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+}
+.img-texto img {
+  width: 100%;
+}
+.img-texto .texto-contacto {
+  padding: 2rem;
+}
+.img-texto .mensajes-flex {
+  display: flex;
+  padding-left: 2rem;
+}
+.img-texto .mensajes-flex svg {
+  width: 2.5rem;
+}
+.img-texto .mensajes-flex p {
+  margin-left: 1rem;
+}
+
+.contacto-flex {
+  display: flex;
+}
+.contacto-flex img {
+  display: none;
+}
+.contacto-flex .formulario {
+  width: 60rem;
+  margin: 2rem auto;
+}
+.contacto-flex .formulario fieldset {
+  border: 1px solid rgb(127, 136, 146);
+}
+.contacto-flex .formulario fieldset legend {
+  background-color: rgb(80, 90, 133);
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+.contacto-flex .formulario .campo {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.contacto-flex .formulario .campo label {
+  flex-basis: 10rem;
+  margin-left: 2rem;
+}
+.contacto-flex .formulario .campo input,
+.contacto-flex .formulario .campo textarea {
+  width: 100%;
+  margin-right: 2rem;
+  border: 1px solid rgb(225, 225, 225);
+  outline: none;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+.contacto-flex .formulario .btn {
+  background-color: rgb(80, 90, 133);
+  color: rgb(225, 225, 225);
+  font-weight: 900;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+  border: none;
+}
+.contacto-flex .formulario .btn:hover {
+  cursor: pointer;
+  background-color: rgb(181, 181, 181);
+  color: black;
+}
+
+.footer {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  background-color: rgb(181, 181, 181);
+}
+.footer svg {
+  fill: rgb(90, 99, 112);
+  width: 4rem;
+  padding-bottom: 1rem;
+}
+.footer h3 {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redes a {
+  padding: 1rem;
+}
+
+.contact-flex {
+  display: flex;
+}
+.contact-flex svg {
+  margin-left: 5rem;
+}
+.contact-flex a {
+  display: block;
+  text-align: center;
+}
+.contact-flex a p {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
+
+.soporte a {
+  display: block;
+  text-align: center;
+}
+
+.copy {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 450px) {
+  /* FOOTER */
+  .footer {
+    font-size: 1.6rem;
+  }
+  .footer .contact-flex a p {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 576px) {
+  /* GLOBALES */
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.7rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  /* NAV */
+  .navbar img {
+    width: 19.5rem;
+    height: 3.7rem;
+  }
+  .hero {
+    background-image: url(../img/principal2.webp);
+    height: 30rem;
+  }
+  /* PRODUCTOS DESTACADOS */
+  .listado-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* COCINA-COMEDOR */
+  .titulo {
+    font-size: 2.5rem;
+  }
+  .flex-cocina {
+    flex-direction: row;
+  }
+  .grid-sillas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-mesas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* DORMITORIO */
+  .grid-camas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-camas .camas:nth-child(3) {
+    grid-column: 1/3;
+  }
+}
+@media (min-width: 691px) {
+  /* DORMITORIO */
+  .grid-mesas-luz {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-mesas-luz .mesas-luz:nth-child(3) {
+    grid-column: 1/3;
+  }
+  .grid-mesas-luz .mesas-luz:nth-child(3) .flotado {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-mesas-luz .mesas-luz:nth-child(3) .flotado .caracteristicas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .grid-mesas-luz .mesas-luz:nth-child(5) {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+}
+@media (min-width: 768px) {
+  /* GLOBALES */
+  .button-a:hover {
+    background-color: rgb(111, 121, 131);
+    color: white;
+    border-bottom-right-radius: 1rem;
+  }
+  /* HEADER Y NAV */
+  header img {
+    display: block;
+    margin: 5rem auto;
+  }
+  .navbar {
+    display: none;
+  }
+  .contenedor-navegacion {
+    border-top: 1px solid rgb(225, 225, 225);
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  .contenedor-navegacion .nav-principal {
+    padding: 2rem;
+  }
+  .contenedor-navegacion .nav-principal ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contenedor-navegacion .nav-principal ul li a {
+    padding: 2rem;
+    font-size: 1.8rem;
+  }
+  .contenedor-navegacion .nav-principal ul li a:hover {
+    background-color: rgb(111, 121, 131);
+    color: white;
+  }
+  .hero {
+    height: 60rem;
+  }
+  /* CATEGORIAS */
+  .listado-categorias {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    border: rgb(225, 225, 225);
+  }
+  .listado-categorias .categoria {
+    width: 32%;
+  }
+  /* PRODUCTOS DESTACADOS */
+  .listado-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* PAGINA COCINA-COMEDOR */
+  .grid-sillas {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "silla1 silla2 silla3" "silla4 silla5 silla6";
+  }
+  .grid-sillas .silla1 {
+    grid-area: silla1;
+  }
+  .grid-sillas .silla2 {
+    grid-area: silla2;
+  }
+  .grid-sillas .silla3 {
+    grid-area: silla3;
+  }
+  .grid-sillas .silla4 {
+    grid-area: silla4;
+  }
+  .grid-sillas .silla5 {
+    grid-area: silla5;
+  }
+  .grid-sillas .silla6 {
+    grid-area: silla6;
+  }
+  /* PAGINA LIVING */
+  .hero-living {
+    background-image: url(../img/living.webp);
+    height: 65rem;
+  }
+  .container-living {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "design1 design1 design2 design2" "design3 design3 design3 design3" "design4 design4 design5 design5" "design6 design6 design6 design6" "design9 design9 design7 design7" "design8 design8 design8 design8";
+    gap: 2rem;
+  }
+  .container-living .design:nth-child(1) {
+    grid-area: design1;
+  }
+  .container-living .design:nth-child(2) {
+    grid-area: design2;
+  }
+  .container-living .design:nth-child(3) {
+    grid-area: design3;
+  }
+  .container-living .design:nth-child(4) {
+    grid-area: design4;
+  }
+  .container-living .design:nth-child(5) {
+    grid-area: design5;
+  }
+  .container-living .design:nth-child(6) {
+    grid-area: design6;
+  }
+  .container-living .design:nth-child(7) {
+    grid-area: design7;
+  }
+  .container-living .design:nth-child(8) {
+    grid-area: design8;
+  }
+  .container-living .design:nth-child(9) {
+    grid-area: design9;
+  }
+  .grid-ofertas {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "oferta1 oferta1 oferta1 oferta1 oferta1 oferta1" "oferta2 oferta2 oferta2 oferta3 oferta3 oferta3" "oferta4 oferta4 oferta5 oferta5 oferta6 oferta6";
+    gap: 2rem;
+  }
+  .grid-ofertas .oferta:nth-child(1) {
+    grid-area: oferta1;
+  }
+  .grid-ofertas .oferta:nth-child(2) {
+    grid-area: oferta2;
+  }
+  .grid-ofertas .oferta:nth-child(3) {
+    grid-area: oferta3;
+  }
+  .grid-ofertas .oferta:nth-child(4) {
+    grid-area: oferta4;
+  }
+  .grid-ofertas .oferta:nth-child(5) {
+    grid-area: oferta5;
+  }
+  .grid-ofertas .oferta:nth-child(6) {
+    grid-area: oferta6;
+  }
+  /* PAGINA DORMITORIO */
+  .flex-dormitorio {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+  }
+  .flex-dormitorio .dormitorio {
+    width: 31%;
+    margin: 1rem 0;
+  }
+  .flex-dormitorio .dormitorio a {
+    margin-bottom: 0;
+  }
+  .grid-camas {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+  .grid-camas .camas:nth-child(1) {
+    grid-column: 1/4;
+  }
+  .grid-camas .camas:nth-child(2) {
+    grid-column: 4/7;
+  }
+  .grid-camas .camas:nth-child(3) {
+    grid-column: 1/3;
+  }
+  .grid-camas .camas:nth-child(4) {
+    grid-column: 3/5;
+  }
+  .grid-camas .camas:nth-child(5) {
+    grid-column: 5/7;
+  }
+  /* CONTACTO */
+  .img-texto {
+    width: 60rem;
+  }
+}
+@media (min-width: 800px) {
+  /* FOOTER */
+  .footer {
+    font-size: 1.7rem;
+  }
+  .footer .footer-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+  }
+  .footer .footer-flex svg {
+    width: 3rem;
+  }
+  .footer .footer-flex .contact-flex a p {
+    text-align: left;
+    font-size: 1.7rem;
+  }
+  .footer .footer-flex .soporte a {
+    text-align: left;
+  }
+}
+@media (min-width: 830px) {
+  /* PAGINA DORMITORIO */
+  .grid-mesas-luz {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .grid-mesas-luz .mesas-luz:nth-child(3) {
+    grid-column: 3/4;
+  }
+  .grid-mesas-luz .mesas-luz:nth-child(3) .flotado {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .grid-mesas-luz .mesas-luz:nth-child(3) .flotado .caracteristicas {
+    padding-top: 0;
+  }
+  .grid-mesas-luz .mesas-luz:nth-child(5) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .flex-comodas {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    gap: 1rem;
+  }
+  .flex-comodas a {
+    width: 32%;
+    margin: 1rem 0;
+  }
+  .flex-comodas a img {
+    width: 100%;
+  }
+}
+@media (min-width: 900px) {
+  /* PAGINA COCINA COMEDOR */
+  .titulo {
+    font-size: 3rem;
+  }
+  .grid-mesas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  /* GLOBALES */
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  /* PAGINA LIVING */
+  .container-living {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "design1 design1 design2 design2 design3 design3" "design4 design4 design5 design5 design6 design6" "design7 design7 design7 design9 design9 design9" "design8 design8 design8 design8 design8 design8";
+    gap: 2rem;
+  }
+  .container-living .design:nth-child(8) {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1100px) {
+  /* LIVING */
+  .grid-ofertas {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "oferta1 oferta1 oferta1 oferta1 oferta1 oferta1" "oferta2 oferta2 oferta2 oferta3 oferta3 oferta3" "oferta4 oferta4 oferta5 oferta5 oferta6 oferta6";
+    gap: 2rem;
+  }
+  .grid-ofertas .oferta:nth-child(1) {
+    grid-area: oferta1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+  .grid-ofertas .oferta:nth-child(2) {
+    grid-area: oferta2;
+  }
+  .grid-ofertas .oferta:nth-child(3) {
+    grid-area: oferta3;
+  }
+  .grid-ofertas .oferta:nth-child(4) {
+    grid-area: oferta4;
+  }
+  .grid-ofertas .oferta:nth-child(5) {
+    grid-area: oferta5;
+  }
+  .grid-ofertas .oferta:nth-child(6) {
+    grid-area: oferta6;
+  }
+  /* CONTACTO */
+  .contacto-flex {
+    display: flex;
+  }
+  .contacto-flex img {
+    display: block;
+  }
+}
+@media (min-width: 1155px) {
+  /* SOBRE NOSOTROS */
+  .nosotros-grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+  }
+  .nosotros-grid .imagen-nosotros {
+    height: 100%;
+  }
+  .nosotros-grid .imagen-nosotros2 {
+    display: block;
+  }
+  .nosotros-grid .texto-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .nosotros-grid .texto-nosotros h3 {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+  }
+  .nosotros-grid .texto-nosotros p {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  /* NAV */
+  .nav-principal a {
+    padding: 1.5rem;
+    font-size: 2rem;
+  }
+  .texto-nosotros h3 {
+    font-size: 3rem;
+  }
+  .texto-nosotros p {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1400px) {
+  /* SOBRE NOSOTROS */
+  .texto-nosotros h3 {
+    font-size: 4rem;
+  }
+  .texto-nosotros p {
+    font-size: 1.8rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
