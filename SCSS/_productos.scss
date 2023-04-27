@@ -7,8 +7,8 @@
 .nosotros-grid {
     display: grid;
 
-    .imagen-nosotros2 {
-        display: none;
+    #img-sobre-nosotros {
+        content: url(../img/sobre-nosotros-mobile.webp);
     }
 
     .texto-nosotros {
@@ -68,6 +68,15 @@
     @include flex(column, 2rem);
 }
 
+.producto {
+    .mesa-desktop {
+        display: none
+    }
+    .living-desktop {
+        display: none
+    }
+}
+
 .grid-ofertas {
     @include grid();
 }
@@ -87,6 +96,9 @@
 
 .grid-mesas-luz {
     @include grid();
+    .dormitorio-desktop {
+        display: none;
+    }
 }
 
 .flex-comodas {

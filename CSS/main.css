@@ -75,6 +75,10 @@ img {
   font-size: 1.8rem;
   margin-bottom: 0;
 }
+.producto img:active {
+  box-shadow: 0.2rem 1rem 3.5rem 0.8rem rgba(0, 0, 0, 0.75);
+  transform: scale(0.98);
+}
 
 .button-a {
   display: block;
@@ -82,7 +86,7 @@ img {
   padding: 2rem;
   font-size: 2rem;
 }
-.button-a:focus {
+.button-a:active {
   background-color: rgb(111, 121, 131);
   color: white;
   border-bottom-right-radius: 1rem;
@@ -121,8 +125,8 @@ header img {
 .nosotros-grid {
   display: grid;
 }
-.nosotros-grid .imagen-nosotros2 {
-  display: none;
+.nosotros-grid #img-sobre-nosotros {
+  content: url(../img/sobre-nosotros-mobile.webp);
 }
 .nosotros-grid .texto-nosotros {
   color: white;
@@ -181,6 +185,13 @@ header img {
   gap: 2rem;
 }
 
+.producto .mesa-desktop {
+  display: none;
+}
+.producto .living-desktop {
+  display: none;
+}
+
 .grid-ofertas {
   display: grid;
   gap: 2rem;
@@ -203,6 +214,9 @@ header img {
 .grid-mesas-luz {
   display: grid;
   gap: 2rem;
+}
+.grid-mesas-luz .dormitorio-desktop {
+  display: none;
 }
 
 .flex-comodas {
@@ -345,7 +359,6 @@ header img {
 }
 
 @media (min-width: 450px) {
-  /* FOOTER */
   .footer {
     font-size: 1.6rem;
   }
@@ -354,7 +367,6 @@ header img {
   }
 }
 @media (min-width: 576px) {
-  /* GLOBALES */
   h1 {
     font-size: 3rem;
   }
@@ -364,7 +376,6 @@ header img {
   h3 {
     font-size: 2.2rem;
   }
-  /* NAV */
   .navbar img {
     width: 19.5rem;
     height: 3.7rem;
@@ -373,12 +384,10 @@ header img {
     background-image: url(../img/principal2.webp);
     height: 30rem;
   }
-  /* PRODUCTOS DESTACADOS */
   .listado-productos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  /* COCINA-COMEDOR */
   .titulo {
     font-size: 2.5rem;
   }
@@ -391,21 +400,32 @@ header img {
   .grid-mesas {
     grid-template-columns: repeat(2, 1fr);
   }
-  /* DORMITORIO */
+  .container-living .mesa-desktop {
+    display: block;
+  }
+  .container-living .mesa-mobile {
+    display: none;
+  }
   .grid-camas {
     grid-template-columns: repeat(2, 1fr);
   }
   .grid-camas .camas:nth-child(3) {
     grid-column: 1/3;
   }
+  .grid-mesas-luz .dormitorio-desktop {
+    display: block;
+  }
+  .grid-mesas-luz .dormitorio-mobile {
+    display: none;
+  }
 }
-@media (min-width: 691px) {
-  /* DORMITORIO */
+@media (min-width: 725px) {
   .grid-mesas-luz {
     grid-template-columns: repeat(2, 1fr);
   }
   .grid-mesas-luz .mesas-luz:nth-child(3) {
     grid-column: 1/3;
+    height: 100%;
   }
   .grid-mesas-luz .mesas-luz:nth-child(3) .flotado {
     display: grid;
@@ -423,13 +443,22 @@ header img {
   }
 }
 @media (min-width: 768px) {
-  /* GLOBALES */
+  .button-a {
+    border-bottom-right-radius: 1rem;
+    transition: 0.3s ease;
+  }
   .button-a:hover {
     background-color: rgb(111, 121, 131);
     color: white;
-    border-bottom-right-radius: 1rem;
   }
-  /* HEADER Y NAV */
+  .producto img {
+    transition: 0.3s ease;
+  }
+  .producto img:hover {
+    box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.8);
+    transform: scale(1.01);
+    cursor: pointer;
+  }
   header img {
     display: block;
     margin: 5rem auto;
@@ -443,6 +472,7 @@ header img {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 100;
   }
   .contenedor-navegacion .nav-principal {
     padding: 2rem;
@@ -452,8 +482,10 @@ header img {
     justify-content: space-between;
   }
   .contenedor-navegacion .nav-principal ul li a {
+    border-bottom-right-radius: 1rem;
     padding: 2rem;
     font-size: 1.8rem;
+    transition: 0.3s ease;
   }
   .contenedor-navegacion .nav-principal ul li a:hover {
     background-color: rgb(111, 121, 131);
@@ -462,7 +494,6 @@ header img {
   .hero {
     height: 60rem;
   }
-  /* CATEGORIAS */
   .listado-categorias {
     display: flex;
     justify-content: space-between;
@@ -473,12 +504,22 @@ header img {
   .listado-categorias .categoria {
     width: 32%;
   }
-  /* PRODUCTOS DESTACADOS */
-  .listado-productos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  .nosotros-grid #img-sobre-nosotros {
+    content: url(../img/sobre-nosotros.webp);
   }
-  /* PAGINA COCINA-COMEDOR */
+  .nosotros-grid .imagen-mobile {
+    display: none;
+  }
+  .carousel {
+    display: none;
+  }
+  .hero-cocina {
+    background-image: url(../img/cocina.webp);
+    height: 70rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
   .grid-sillas {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "silla1 silla2 silla3" "silla4 silla5 silla6";
@@ -501,10 +542,9 @@ header img {
   .grid-sillas .silla6 {
     grid-area: silla6;
   }
-  /* PAGINA LIVING */
   .hero-living {
     background-image: url(../img/living.webp);
-    height: 65rem;
+    height: 70rem;
   }
   .container-living {
     display: grid;
@@ -539,6 +579,12 @@ header img {
   .container-living .design:nth-child(9) {
     grid-area: design9;
   }
+  .producto .living-desktop {
+    display: block;
+  }
+  .producto .living-mobile {
+    display: none;
+  }
   .grid-ofertas {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -563,7 +609,6 @@ header img {
   .grid-ofertas .oferta:nth-child(6) {
     grid-area: oferta6;
   }
-  /* PAGINA DORMITORIO */
   .flex-dormitorio {
     justify-content: space-between;
     flex-wrap: wrap;
@@ -595,13 +640,49 @@ header img {
   .grid-camas .camas:nth-child(5) {
     grid-column: 5/7;
   }
-  /* CONTACTO */
+  .flex-comodas {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    gap: 1rem;
+  }
+  .flex-comodas a {
+    width: 32%;
+    margin: 1rem 0;
+  }
+  .flex-comodas a img {
+    width: 100%;
+  }
   .img-texto {
     width: 60rem;
   }
+  .soporte a {
+    color: black;
+    transition: 0.3s ease;
+  }
+  .soporte a:hover {
+    color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .contactanos p {
+    color: black;
+    transition: 0.3s ease;
+  }
+  .contactanos p:hover {
+    color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .redes svg {
+    transition: 0.3s ease;
+  }
+  .redes svg:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
 }
 @media (min-width: 800px) {
-  /* FOOTER */
   .footer {
     font-size: 1.7rem;
   }
@@ -623,7 +704,10 @@ header img {
   }
 }
 @media (min-width: 830px) {
-  /* PAGINA DORMITORIO */
+  .listado-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
   .grid-mesas-luz {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -642,22 +726,19 @@ header img {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  .flex-comodas {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-flow: wrap;
-    gap: 1rem;
+}
+@media (min-width: 850px) {
+  .container-living {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "design1 design1 design2 design2 design3 design3" "design4 design4 design5 design5 design6 design6" "design9 design9 design9 design7 design7 design7" "design8 design8 design8 design8 design8 design8";
+    gap: 2rem;
   }
-  .flex-comodas a {
-    width: 32%;
-    margin: 1rem 0;
-  }
-  .flex-comodas a img {
-    width: 100%;
+  .container-living .design:nth-child(8) {
+    font-size: 2rem;
   }
 }
 @media (min-width: 900px) {
-  /* PAGINA COCINA COMEDOR */
   .titulo {
     font-size: 3rem;
   }
@@ -666,7 +747,6 @@ header img {
   }
 }
 @media (min-width: 992px) {
-  /* GLOBALES */
   h1 {
     font-size: 4rem;
   }
@@ -676,19 +756,8 @@ header img {
   h3 {
     font-size: 2.5rem;
   }
-  /* PAGINA LIVING */
-  .container-living {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "design1 design1 design2 design2 design3 design3" "design4 design4 design5 design5 design6 design6" "design7 design7 design7 design9 design9 design9" "design8 design8 design8 design8 design8 design8";
-    gap: 2rem;
-  }
-  .container-living .design:nth-child(8) {
-    font-size: 2rem;
-  }
 }
 @media (min-width: 1100px) {
-  /* LIVING */
   .grid-ofertas {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -715,7 +784,6 @@ header img {
   .grid-ofertas .oferta:nth-child(6) {
     grid-area: oferta6;
   }
-  /* CONTACTO */
   .contacto-flex {
     display: flex;
   }
@@ -723,18 +791,26 @@ header img {
     display: block;
   }
 }
-@media (min-width: 1155px) {
-  /* SOBRE NOSOTROS */
+@media (min-width: 1200px) {
+  .nav-principal a {
+    padding: 1.5rem;
+    font-size: 2rem;
+  }
+  .texto-nosotros h3 {
+    font-size: 3rem;
+  }
+  .texto-nosotros p {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1250px) {
   .nosotros-grid {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1rem;
   }
-  .nosotros-grid .imagen-nosotros {
-    height: 100%;
-  }
-  .nosotros-grid .imagen-nosotros2 {
-    display: block;
+  .nosotros-grid #img-sobre-nosotros2 {
+    content: url(../img/sobre-nosotros2.webp);
   }
   .nosotros-grid .texto-nosotros {
     display: flex;
@@ -750,21 +826,7 @@ header img {
     font-size: 1.8rem;
   }
 }
-@media (min-width: 1200px) {
-  /* NAV */
-  .nav-principal a {
-    padding: 1.5rem;
-    font-size: 2rem;
-  }
-  .texto-nosotros h3 {
-    font-size: 3rem;
-  }
-  .texto-nosotros p {
-    font-size: 1.7rem;
-  }
-}
 @media (min-width: 1400px) {
-  /* SOBRE NOSOTROS */
   .texto-nosotros h3 {
     font-size: 4rem;
   }
